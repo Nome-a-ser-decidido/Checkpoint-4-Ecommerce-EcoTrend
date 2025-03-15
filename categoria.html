@@ -77,11 +77,11 @@
             
                             <!-- Filtro de Tipo de Produto -->
                             <h5 class="card-title mt-4">Tipo de Produto</h5>
-                            <select class="form-select mb-3">
+                            <select class="form-select mb-3" id="tipoFiltro">
                                 <option value="" selected disabled>Escolha o tipo</option>
-                                <option value="1">Categoria 1</option>
-                                <option value="2">Categoria 2</option>
-                                <option value="3">Categoria 3</option>
+                                <option value="perfume">Perfume</option>
+                                <option value="shampoo">Shampoo</option>
+                                <option value="outro">Outros</option>
                             </select>
             
                             <!-- Filtro de Marca -->
@@ -108,20 +108,22 @@
                   <div class="col-12 col-md-4 mb-4 produto">
                     <div class="card bg-transparent">
                         <img src="./images/gold-black-perfume.png" class="card-img-top" alt="Imagem do Card">
-                            <h4 class="card-title">Gold Black Perfume</h4>
-                            <p class="card-text preco">$499.00</p>
-                            <a href="#" class="card-buy d-flex justify-content-center ">Adicionar ao carrinho</a>
-                            <a href="#" class="card-buy d-flex justify-content-center ">Ver mais detalhes >></a>
+                        <h4 class="card-title">Gold Black Perfume</h4>
+                        <meta class="tipoProduto" content="perfume">
+                        <p class="card-text preco">$499.00</p>
+                        <a href="#" class="card-buy d-flex justify-content-center ">Adicionar ao carrinho</a>
+                        <a href="#" class="card-buy d-flex justify-content-center ">Ver mais detalhes >></a>
                     </div>
                 </div>
         
                 <div class="col-12 col-md-4 mb-4 produto">
                     <div class="card bg-transparent">
                         <img src="./images/shampoo-pinheiros.png" class="card-img-top" alt="Imagem do Card">
-                            <h4 class="card-title">Shampoo Pinheiros</h4>
-                            <p class="card-text preco">$69.00</p>
-                            <a href="#" class="card-buy d-flex justify-content-center ">Adicionar ao carrinho</a>
-                            <a href="#" class="card-buy d-flex justify-content-center ">Ver mais detalhes >></a>
+                        <h4 class="card-title">Shampoo Pinheiros</h4>
+                        <meta class="tipoProduto" content="shampoo">
+                        <p class="card-text preco">$69.00</p>
+                        <a href="#" class="card-buy d-flex justify-content-center ">Adicionar ao carrinho</a>
+                        <a href="#" class="card-buy d-flex justify-content-center ">Ver mais detalhes >></a>
                     </div>
                 </div>
         
