@@ -1,30 +1,43 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Garante que o card ocupe toda a altura disponível */
+}
 
-.card-title{
+.card-body {
+    flex: 1; /* Faz o corpo do card ocupar o espaço restante */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
     font-weight: bold;
 }
-.card-text{
+
+.card-text {
     color: #828282;
-    height: 75px;
-    margin-bottom: 100px;
+    margin-bottom: 10px; /* Espaçamento padrão entre os textos */
 }
 
-
-.card-buy{
+.card-buy {
     height: 50px;
     align-items: center;
     font-weight: bold;
     font-style: italic;
     font-family: "Inter", sans-serif;
-    border-radius:10px;
+    border-radius: 10px;
     text-align: center;
     border: 1px solid;
-    color:#A8A733;
+    color: #A8A733;
     background-color: #606C38;
-    margin:5px;
-
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Remove sublinhado dos links */
 }
 
-.card-buy:hover{
-    color:#606C38;
+.card-buy:hover {
+    color: #606C38;
     background-color: #A8A733;
 }
