@@ -16,6 +16,7 @@ header{
     color: #A8A733;
     text-align: center;   
 }
+
 .nav-link{
     color: #A8A733;
 }
@@ -23,7 +24,7 @@ header{
     display: flex;
     gap: 10px;
 }
-
+/* Botão do carrinho */
 .shopping-cart{
     border: 2px solid #606C38;
     border-radius:10px;
@@ -31,8 +32,27 @@ header{
     outline: 0;
     align-items: center;
     width: 100px;
-    
 }
+
 .shopping-cart:hover{
     background-color: #a8a733;
+}
+
+/* Estilização do Footer */
+footer{
+    background-color: rgba(40, 54, 24, 0.9);
+    color: #A8A733;
+    align-content: center;
+    text-align: center;
+    height: 250px;
+}
+@media screen and (min-width:767px) {
+    footer{
+        height: 150px;
+    }
+}
+
+.footer-name{
+    font-size: 1.5rem;
+
 }
