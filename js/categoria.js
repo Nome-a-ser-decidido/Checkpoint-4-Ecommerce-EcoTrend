@@ -10,9 +10,16 @@ function checkPreco(precoFunc){
 
 function checkTipo(tipoInput){
     const tipoFiltro = document.getElementById('tipoFiltro').value;
-    console.log(tipoInput)
-    console.log(tipoFiltro)
     if(tipoInput == tipoFiltro){
+        return true
+    }else{
+        return false
+    }
+}
+
+function checkMarca(marcaInput){
+    const marcaFiltro = document.getElementById('marcaFiltro').value;
+    if(marcaFiltro == marcaInput){
         return true
     }else{
         return false
@@ -26,11 +33,13 @@ function filtrar(){
         const precoTexto = produto.querySelector('.card .preco').textContent;
         const precoValor = parseFloat(precoTexto.replace('$', ''));
         const tipoProduto = produto.querySelector('.card .tipoProduto').content;
+        const marcaProduto = produto.querySelector('.card .marca').textContent;
 
         const precoGate = checkPreco(precoValor);
         const tipoGate = checkTipo(tipoProduto);
+        const marcaGate = checkMarca(marcaProduto);
 
-        if(precoGate == false || tipoGate == false){
+        if(precoGate == false || tipoGate == false || marcaGate == false){
             produto.style.display = 'none';
         } else{
             produto.style.display = '';
@@ -38,12 +47,6 @@ function filtrar(){
     })
 }
 
-function reset() {
-    const produtos = document.querySelectorAll('.produto');
-    produtos.forEach(produto => {
-        produto.style.display = ''; 
-    });
-}
 
 
 document.getElementById('aplicarFiltro').addEventListener('click', function(event){
@@ -51,8 +54,9 @@ document.getElementById('aplicarFiltro').addEventListener('click', function(even
     const precoMinCheck = document.getElementById('precoMin').value;
     const precoMaxCheck = document.getElementById('precoMax').value;
     const tipoFiltro = document.getElementById('tipoFiltro').value
+    const marcaCheck = document.getElementById('marcaFiltro').value
 
-    if (precoMinCheck.trim() === "" || precoMaxCheck.trim() === "" || tipoFiltro.trim() === "") {
+    if (precoMinCheck.trim() === "" || precoMaxCheck.trim() === "" || tipoFiltro.trim() === "" || marcaCheck.trim() === "") {
         alert("Por favor, preencha os campos de preço corretamente.");
         return;
     }
