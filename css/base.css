@@ -1,0 +1,38 @@
+body{
+    background-color: #FEFAE0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+a{
+    color: inherit; 
+    text-decoration: none; 
+    cursor: text;
+}
+/* Estilização do Headers */
+header{
+    background-color: rgba(40, 54, 24, 0.9);
+    color: #A8A733;
+    text-align: center;   
+}
+.nav-link{
+    color: #A8A733;
+}
+.shopping-cart-small-flex{
+    display: flex;
+    gap: 10px;
+}
+
+.shopping-cart{
+    border: 2px solid #606C38;
+    border-radius:10px;
+    background-color: #606C38;
+    outline: 0;
+    align-items: center;
+    width: 100px;
+    
+}
+.shopping-cart:hover{
+    background-color: #a8a733;
+}
