@@ -1,0 +1,26 @@
+.card-title{
+    font-weight: bold;
+}
+.card-text{
+    color: #828282;
+    height: 110px;
+}
+.card-buy{
+    height: 50px;
+    align-items: center;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    border-radius:10px;
+    text-align: center;
+    border: 1px solid;
+    color:#A8A733;
+    background-color: #606C38;
+    margin:5px;
+
+}
+
+.card-buy:hover{
+    color:#606C38;
+    background-color: #A8A733;
+}
