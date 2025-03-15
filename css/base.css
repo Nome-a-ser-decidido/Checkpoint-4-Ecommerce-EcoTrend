@@ -14,7 +14,7 @@ a{
 }
 /* Estilização do Headers */
 header{
-    background-color: rgba(40, 54, 24, 0.9);
+    background-color: rgba(40, 54, 24,0.9);
     color: #A8A733;
     text-align: center;   
 }
@@ -42,11 +42,13 @@ header{
 
 /* Estilização do Footer */
 footer{
-    background-color: rgba(40, 54, 24, 0.9);
+    background-color: rgba(40, 54, 24,0.9);
     color: #A8A733;
     align-content: center;
     text-align: center;
     height: 250px;
+    clear: both;
+    position: relative;
 }
 @media screen and (min-width:767px) {
     footer{
