@@ -1,0 +1,12 @@
+input{
+    margin: 10px;
+}
+.submit-button{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 50%;
+    height: 50px;
+    font-weight: bold;
+
+}
