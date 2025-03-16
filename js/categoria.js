@@ -63,6 +63,9 @@ function filtrar(){
         } else{
             produto.style.display = '';
         }
+        // console.log(precoGate)
+        // console.log(tipoGate)
+        // console.log(marcaGate)
     })
 }
 

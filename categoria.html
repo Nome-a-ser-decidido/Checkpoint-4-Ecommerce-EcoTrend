@@ -83,6 +83,7 @@
                                 <option value="perfume">Perfume</option>
                                 <option value="shampoo">Shampoo</option>
                                 <option value="outro">Outros</option>
+                                <option value="">Nenhuma Específica</option>
                             </select>
             
                             <!-- Filtro de Marca -->
@@ -90,8 +91,9 @@
                             <select class="form-select mb-3" id="marcaFiltro">
                                 <option value="" selected disabled>Escolha a marca</option>
                                 <option value="Opulentia">Opulentia</option>
-                                <option value="EcoPine">EcoPine</option>
+                                <option value="SeaSide">SeaSide</option>
                                 <option value="3">Marca C</option>
+                                <option value="">Nenhuma Específica</option>
                             </select>
             
                             <!-- Botão de Aplicar Filtros -->
@@ -105,11 +107,16 @@
               <!-- Produtos -->
               <div class="col-md-9">
                 <div class="row">
-                
+                    <div class="col section-title">
+                        <h3>Perfumes</h3>
+                    </div>
+                </div>
+                <div class="row">
+
                   <div class="col-12 col-md-4 mb-4 produto">
                     <div class="card bg-transparent">
                         <img src="./images/gold-black-perfume.png" class="card-img-top" alt="Imagem do Card">
-                        <h4 class="card-title">Gold Black Perfume</h4>
+                        <h4 class="card-title">Gold Black</h4>
                         <meta class="tipoProduto" content="perfume">
                         <p class="card-text preco">$499.00</p>
                         <p class="card-text marca">Opulentia</p>
@@ -117,8 +124,31 @@
                         <a href="#" class="card-buy d-flex justify-content-center ">Ver mais detalhes >></a>
                     </div>
                 </div>
-        
+                
                 <div class="col-12 col-md-4 mb-4 produto">
+                    <div class="card bg-transparent">
+                        <img src="./images/silver-sea-perfume.png" class="card-img-top" alt="Imagem do Card">
+                        <h4 class="card-title">Silver Sea</h4>
+                        <meta class="tipoProduto" content="perfume">
+                        <p class="card-text preco">$249.00</p>
+                        <p class="card-text marca">SeaSide</p>
+                        <a href="#" class="card-buy d-flex justify-content-center ">Adicionar ao carrinho</a>
+                        <a href="#" class="card-buy d-flex justify-content-center ">Ver mais detalhes >></a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-4 produto">
+                    <div class="card bg-transparent">
+                        <img src="./images/aureo-deluxe-perfume.jpg" class="card-img-top" alt="Imagem do Card">
+                        <h4 class="card-title">Aureo Deluxe</h4>
+                        <meta class="tipoProduto" content="perfume">
+                        <p class="card-text preco">$769.00</p>
+                        <p class="card-text marca">Opulentia</p>
+                        <a href="#" class="card-buy d-flex justify-content-center ">Adicionar ao carrinho</a>
+                        <a href="#" class="card-buy d-flex justify-content-center ">Ver mais detalhes >></a>
+                    </div>
+                </div>
+                <!-- <div class="col-12 col-md-4 mb-4 produto">
                     <div class="card bg-transparent">
                         <img src="./images/shampoo-pinheiros.png" class="card-img-top" alt="Imagem do Card">
                         <h4 class="card-title">Shampoo Pinheiros</h4>
@@ -128,17 +158,10 @@
                         <a href="#" class="card-buy d-flex justify-content-center ">Adicionar ao carrinho</a>
                         <a href="#" class="card-buy d-flex justify-content-center ">Ver mais detalhes >></a>
                     </div>
-                </div>
+                </div> -->
         
-                  <div class="col-md-4 mb-4">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Produto 3</h5>
-                        <p class="card-text">R$ 300,00</p>
-                        <a href="#" class="btn btn-primary">Ver Produto</a>
-                      </div>
-                    </div>
-                  </div>
+
+
                 </div>
               </div>
             </div>
@@ -195,7 +218,6 @@
             </div>
         </div>
     </footer>
-#A8A733
     <script src="./js/index.js"></script>
     <script src="./js/categoria.js"></script>
 </body>
