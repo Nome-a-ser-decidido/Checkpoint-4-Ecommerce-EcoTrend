@@ -1,0 +1,25 @@
+h2{
+    font-weight: bold;
+    font-size:64px;
+}
+#after-title{
+    color: #828282;
+}
+.comprar{
+    font-size:32px; padding: 20px;
+}
+.comprar-botao{
+    font-family: "Inter", sans-serif;
+    border-radius: 40px;
+    text-align: center;
+    border: 1px solid;
+    color: white;
+    background-color: #606C38;
+    margin: 5px;
+    text-decoration: none; 
+}
+
+.comprar-botao:hover{
+    color: black;
+    background-color: #A8A733;
+}
