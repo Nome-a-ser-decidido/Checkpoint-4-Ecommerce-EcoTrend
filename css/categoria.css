@@ -1,3 +1,25 @@
 .background-card{
     background-color: #606C38;
 }
+.botao-filtro{
+    height: 50px;
+    align-items: center;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid;
+    color: #A8A733;
+    background-color: #606C38;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+}
+
+.botao-filtro:hover{
+    color: #606C38;
+    background-color: #A8A733;
+}

@@ -61,7 +61,7 @@
         <div class="container mt-5">
             <div class="row">
               <!-- Filtro Lateral -->
-              <div class="col-md-3 background-card" style="margin-bottom: 20px;">
+              <div class="col-md-3 background-card" style="margin-bottom: 20px; height: 550px;">
                 <div class="card bg-transparent" style="border:0">
                     <div class="card-body">
                         <!-- Filtro de Preço -->
@@ -69,36 +69,34 @@
                         <form>
                             <div class="form-group mb-3">
                                 <label for="precoMin">Preço Mínimo</label>
-                                <input type="number" class="form-control" id="precoMin" placeholder="R$ 0,00">
+                                <input type="number" class="form-control" id="precoMin" placeholder="$ 0,00">
                             </div>
                             <div class="form-group mb-3">
                                 <label for="precoMax">Preço Máximo</label>
-                                <input type="number" class="form-control" id="precoMax" placeholder="R$ 1000,00">
+                                <input type="number" class="form-control" id="precoMax" placeholder="$ 1000,00">
                             </div>
             
                             <!-- Filtro de Tipo de Produto -->
                             <h5 class="card-title mt-4">Tipo de Produto</h5>
                             <select class="form-select mb-3" id="tipoFiltro">
-                                <option value="" selected disabled>Escolha o tipo</option>
+                                <option value="" selected>Nenhuma Específica</option>
                                 <option value="perfume">Perfume</option>
                                 <option value="shampoo">Shampoo</option>
-                                <option value="outro">Outros</option>
-                                <option value="">Nenhuma Específica</option>
+                                <option value="outros">Outros</option>
                             </select>
             
                             <!-- Filtro de Marca -->
                             <h5 class="card-title mt-4">Marca</h5>
                             <select class="form-select mb-3" id="marcaFiltro">
-                                <option value="" selected disabled>Escolha a marca</option>
+                                <option value="" selected>Nenhuma Específica</option>
                                 <option value="Opulentia">Opulentia</option>
                                 <option value="SeaSide">SeaSide</option>
-                                <option value="3">Marca C</option>
-                                <option value="">Nenhuma Específica</option>
+                                <option value="EcoPine">EcoPine</option>
                             </select>
             
                             <!-- Botão de Aplicar Filtros -->
-                            <button type="submit" class="w-100" id="aplicarFiltro">Aplicar Filtros</button>
-                            <button type="submit" class="w-100" style="margin-top: 20px;">Resetar Filtros</button>
+                            <button type="submit" class="w-100 botao-filtro" id="aplicarFiltro">Aplicar Filtros</button>
+                            <button type="submit" class="w-100 botao-filtro" style="margin-top: 20px;">Resetar Filtros</button>
                         </form>
                     </div>
                 </div>
@@ -110,7 +108,7 @@
                     <div class="col section-title">
                         <h3>Perfumes</h3>
                     </div>
-                </div>
+              </div>
                 <div class="row">
 
                   <div class="col-12 col-md-4 mb-4 produto">
@@ -148,20 +146,60 @@
                         <a href="#" class="card-buy d-flex justify-content-center ">Ver mais detalhes >></a>
                     </div>
                 </div>
-                <!-- <div class="col-12 col-md-4 mb-4 produto">
+
+                </div>
+                    <!-- SHAMPOO -->
+                    <div class="row">
+                        <div class="col section-title">
+                            <h3>Shampoo</h3>
+                        </div>
+                  </div>
+                  <div class="row">
+                    
+                    <div class="col-12 col-md-4 mb-4 produto">
+                        <div class="card bg-transparent">
+                            <img src="./images/shampoo-pinheiros.png" class="card-img-top" alt="Imagem do Card">
+                            <h4 class="card-title">Shampoo Pinheiros</h4>
+                            <meta class="tipoProduto" content="shampoo">
+                            <p class="card-text preco">$69.00</p>
+                            <p class="card-text marca">EcoPine</p>
+                            <a href="#" class="card-buy d-flex justify-content-center ">Adicionar ao carrinho</a>
+                            <a href="#" class="card-buy d-flex justify-content-center ">Ver mais detalhes >></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 mb-4 produto">
+                        <div class="card bg-transparent">
+                            <img src="./images/shampoo-carvalho.jpg" class="card-img-top" alt="Imagem do Card">
+                            <h4 class="card-title">Shampoo Carvalho</h4>
+                            <meta class="tipoProduto" content="shampoo">
+                            <p class="card-text preco">$46.00</p>
+                            <p class="card-text marca">EcoPine</p>
+                            <a href="#" class="card-buy d-flex justify-content-center ">Adicionar ao carrinho</a>
+                            <a href="#" class="card-buy d-flex justify-content-center ">Ver mais detalhes >></a>
+                        </div>
+                    </div>
+
+                  </div>
+                  <div class="row">
+                    <div class="col section-title">
+                        <h3>Outros</h3>
+                    </div>
+              </div>
+              <div class="row">
+                
+                <div class="col-12 col-md-4 mb-4 produto">
                     <div class="card bg-transparent">
-                        <img src="./images/shampoo-pinheiros.png" class="card-img-top" alt="Imagem do Card">
-                        <h4 class="card-title">Shampoo Pinheiros</h4>
-                        <meta class="tipoProduto" content="shampoo">
-                        <p class="card-text preco">$69.00</p>
+                        <img src="./images/oleo-facial-lumina.png" class="card-img-top" alt="Imagem do Card">
+                        <h4 class="card-title">Óleo Facial Lumina</h4>
+                        <meta class="tipoProduto" content="outros">
+                        <p class="card-text preco">$120.00</p>
                         <p class="card-text marca">EcoPine</p>
                         <a href="#" class="card-buy d-flex justify-content-center ">Adicionar ao carrinho</a>
                         <a href="#" class="card-buy d-flex justify-content-center ">Ver mais detalhes >></a>
                     </div>
-                </div> -->
-        
-
-
+                </div>
+              </div>
                 </div>
               </div>
             </div>
