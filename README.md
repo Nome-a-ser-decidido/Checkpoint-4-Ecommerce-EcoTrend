@@ -17,3 +17,4 @@ Este projeto teve como objetivo o desenvolvimento de uma interface reponsiva de 
 - Belton Lee Carr
 
 ## Video de demonstração
+https://www.linkedin.com/feed/update/urn:li:activity:7307122432694194177/
