@@ -1,3 +1,5 @@
+// Código feito por Erik Suguiyama
+
 function checkPreco(precoFunc){
     const precoMin = document.getElementById('precoMin').value;
     const precoMax = document.getElementById('precoMax').value;
@@ -34,10 +36,27 @@ function filtrar(){
         const precoValor = parseFloat(precoTexto.replace('$', ''));
         const tipoProduto = produto.querySelector('.card .tipoProduto').content;
         const marcaProduto = produto.querySelector('.card .marca').textContent;
+        
+        const precoMinCheck = document.getElementById('precoMin').value.trim();
+        const precoMaxCheck = document.getElementById('precoMax').value.trim();
+        const tipoFiltro = document.getElementById('tipoFiltro').value.trim();
+        const marcaCheck = document.getElementById('marcaFiltro').value.trim();
+        
+        let precoGate = true
+        let tipoGate = true
+        let marcaGate = true
+        
 
-        const precoGate = checkPreco(precoValor);
-        const tipoGate = checkTipo(tipoProduto);
-        const marcaGate = checkMarca(marcaProduto);
+        if(precoMinCheck != "" && precoMaxCheck != ""){
+            precoGate = checkPreco(precoValor);
+        }
+        if(tipoFiltro != ""){
+            tipoGate = checkTipo(tipoProduto);
+        }
+        if(marcaCheck != ""){
+            marcaGate = checkMarca(marcaProduto);
+        }
+
 
         if(precoGate == false || tipoGate == false || marcaGate == false){
             produto.style.display = 'none';
@@ -51,15 +70,6 @@ function filtrar(){
 
 document.getElementById('aplicarFiltro').addEventListener('click', function(event){
     event.preventDefault();
-    const precoMinCheck = document.getElementById('precoMin').value;
-    const precoMaxCheck = document.getElementById('precoMax').value;
-    const tipoFiltro = document.getElementById('tipoFiltro').value
-    const marcaCheck = document.getElementById('marcaFiltro').value
-
-    if (precoMinCheck.trim() === "" || precoMaxCheck.trim() === "" || tipoFiltro.trim() === "" || marcaCheck.trim() === "") {
-        alert("Por favor, preencha os campos de preço corretamente.");
-        return;
-    }
 
     filtrar();
 
